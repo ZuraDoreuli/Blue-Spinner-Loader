@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #313336;
+}
+.spinner {
+  position: relative;
+  font-size: 100px;
+  width: 300px;
+  height: 300px;
+}
+.spinner-line {
+  position: absolute;
+  left: 50%;
+  top: 17%;
+  width: 12px;
+  height: 40px;
+  border-radius: 40%;
+  transform-origin: 0 100px;
+  animation: spinner 1s infinite linear;
+}
+.spinner-line:nth-child(1) {
+  animation-delay: 0s;
+  transform: rotate(0deg);
+}
+.spinner-line:nth-child(2) {
+  animation-delay: 0.12s;
+  transform: rotate(30deg);
+}
+.spinner-line:nth-child(3) {
+  animation-delay: 0.22s;
+  transform: rotate(60deg);
+}
+.spinner-line:nth-child(4) {
+  animation-delay: 0.32s;
+  transform: rotate(90deg);
+}
+.spinner-line:nth-child(5) {
+  animation-delay: 0.42s;
+  transform: rotate(120deg);
+}
+.spinner-line:nth-child(6) {
+  animation-delay: 0.52s;
+  transform: rotate(150deg);
+}
+.spinner-line:nth-child(7) {
+  animation-delay: 0.62s;
+  transform: rotate(180deg);
+}
+.spinner-line:nth-child(8) {
+  animation-delay: 0.72s;
+  transform: rotate(210deg);
+}
+.spinner-line:nth-child(9) {
+  animation-delay: 0.82s;
+  transform: rotate(240deg);
+}
+.spinner-line:nth-child(10) {
+  animation-delay: 0.92s;
+  transform: rotate(270deg);
+}
+.spinner-line:nth-child(11) {
+  animation-delay: 1.02s;
+  transform: rotate(300deg);
+}
+.spinner-line:nth-child(12) {
+  animation-delay: 1.12s;
+  transform: rotate(330deg);
+}
+@keyframes spinner {
+  0% {
+    background-color: #1d75f8;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
